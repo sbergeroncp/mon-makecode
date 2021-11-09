@@ -11,8 +11,7 @@
         "main.ts",
         "README.md",
         "chiffres_des.md",
-        "halloween.md",
-        "_locales/fr-FR/halloween.md"
+        "halloween.md"
     ],
     "testFiles": [
         "test.ts"
