@@ -189,6 +189,8 @@ input.onButtonPressed(Button.AB, function () {
 
 Félicitations! Tu as terminé de programmer ton Micro:bit d'Halloween! 
 
-Appuie sur "Télécharger" le code dans ton Micro:bit! 
+Une fois terminé, fais valider le travail par un adulte.
 
- 
+Ensuite, appuie sur le bouton "Télécharger" pour accéder à l'application MakeCode/Micro:bit.
+
+Teste ton code et amuse-toi bien!
