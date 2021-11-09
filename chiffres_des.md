@@ -21,7 +21,6 @@ Voici un exemple de projet réalisé par un élève.
 ![CSSBF](https://github.com/sbergeroncp/tuto/blob/master/micro_bit_lancer_de.gif?raw=true)
 
 ## @showdialog
-
 Supprime les blocs déjà présents dans l'espace de programmation.  
 
 ## Étape 2
