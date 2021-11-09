@@ -10,7 +10,8 @@
         "main.blocks",
         "main.ts",
         "README.md",
-        "chiffres_des.md"
+        "chiffres_des.md",
+        "halloween.md"
     ],
     "testFiles": [
         "test.ts"
