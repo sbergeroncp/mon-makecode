@@ -24,13 +24,6 @@ Voici un exemple de projet réalisé par un élève.
 
 Supprime les blocs ``|| basic:au démarrage ||`` et ``|| basic:toujours||``.
 
-## @showdialog
-Crée une variable.
-
-Définis la variable comme étant un nombre aléatoire entre 1 et 6.
-
-Insère cette séquence dans un bloc d'entrée.
-
 ## Étape 2
 
 Crée une variable ``|| variables:Créer une variable... ||``.
@@ -48,12 +41,9 @@ input.onGesture(Gesture.Shake, function () {
 })
 ```
 
-## @showdialog
-Ajoute une ``|| logic:condition ||``.
-
 ## Étape 3
 
-Ajoute un bloc ``|| logic:"0" "=" "1" ||`` dans un bloc ``|| logic:Si "vrai" alors ||``.
+Ajoute un bloc ``|| logic:"0" "=" "0" ||`` dans un bloc ``|| logic:Si "vrai" alors ||``.
 
 Remplace la valeur "0" de gauche par le bloc ``|| variables:"Nombre" ||``.
 
@@ -70,9 +60,6 @@ input.onGesture(Gesture.Shake, function () {
     }
 })
 ```
-
-## @showdialog
-Fais apparaître le symbole 1 et le nombre 1 lorsque le Micro:bit est secoué. 
 
 ## Étape 4
 
