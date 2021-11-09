@@ -20,10 +20,7 @@ Voici un exemple de projet réalisé par un élève.
 
 ![CSSBF](https://github.com/sbergeroncp/tuto/blob/master/micro_bit_lancer_de.gif?raw=true)
 
-## @showdialog
-Supprime les blocs déjà présents dans l'espace de programmation.  
-
-## Étape 2
+## Étape 1
 
 Supprime les blocs ``|| basic:au démarrage ||`` et ``|| basic:toujours||``.
 
@@ -34,7 +31,7 @@ Définis la variable comme étant un nombre aléatoire entre 1 et 6.
 
 Insère cette séquence dans un bloc d'entrée.
 
-## Étape 3
+## Étape 2
 
 Crée une variable ``|| variables:Créer une variable... ||``.
 
@@ -54,7 +51,7 @@ input.onGesture(Gesture.Shake, function () {
 ## @showdialog
 Ajoute une ``|| logic:condition ||``.
 
-## Étape 4
+## Étape 3
 
 Ajoute un bloc ``|| logic:"0" "=" "1" ||`` dans un bloc ``|| logic:Si "vrai" alors ||``.
 
@@ -77,7 +74,7 @@ input.onGesture(Gesture.Shake, function () {
 ## @showdialog
 Fais apparaître le symbole 1 et le nombre 1 lorsque le Micro:bit est secoué. 
 
-## Étape 5
+## Étape 4
 
 Ajoute le bloc ``|| basic: montrer LEDs ||``,  ``|| basic: pause (ms) "100" ||`` et ``|| basic: montrer LEDs ||`` à l'intérieur de la séquence existante.
 
