@@ -91,6 +91,8 @@ input.onGesture(Gesture.Shake, function () {
 Continue de programmer la séquence pour les autres nombres 2 - 3 - 4 - 5 - 6.
 
 ## @showdialog
+Félicitations! Tu as terminé de programmer ton Micro:bit! 
+
 Une fois terminé, fais valider le travail par un adulte.
 
 Ensuite, appuie sur le bouton "Télécharger" pour accéder à l'application MakeCode/Micro:bit.
