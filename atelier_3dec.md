@@ -36,7 +36,11 @@ basic.forever(function () {
 })
 ```
 
-## Étape
+## @showdialog
+
+Ajoute une commande lorsque le bouton A est pressé.
+
+## Étape 1
 
 Ajoute ``|| basic:Afficher texte ||`` dans le bloc ``|| input:Lorsque le bouton A est pressé ||``.
 
@@ -48,7 +52,11 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
-## Étape
+## @showdialog
+
+Ajoute une commande lorsque le bouton B est pressé.
+
+## Étape 2
 
 Ajoute ``|| basic:Afficher texte ||`` dans le bloc ``|| input:Lorsque le bouton B est pressé ||``.
 
@@ -59,8 +67,11 @@ input.onButtonPressed(Button.B, function () {
     basic.showString("Bergeron")
 })
 ```
+## @showdialog
 
-## Étape
+Ajoute une commande lorsque le bouton A+B est pressé.
+
+## Étape 3
 
 Ajoute trois blocs ``|| basic:Montrer LEDs ||`` dans le bloc ``|| Loops:Répéter 2 fois||``.
 
@@ -100,8 +111,11 @@ input.onButtonPressed(Button.AB, function () {
     }
 })
 ```
+## @showdialog
 
-## Étape
+Finalise le projet!
+
+## Étape 5
 
 Teste le programme à l'aide du simulateur. Fonctionne-t-il ?
 
