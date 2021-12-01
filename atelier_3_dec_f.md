@@ -68,7 +68,7 @@ basic.forever(function () {
 
 ## @showdialog 
 
-Ajoute la condition "si".   
+Ajoute une condition "si".   
 
 ## Étape 4 
  
@@ -93,7 +93,7 @@ basic.forever(function () {
 
 ## @showdialog 
 
-Ajoute la condition "sinon".   
+Ajoute une condition "sinon".   
 
 ## Étape 6 
  
