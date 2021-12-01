@@ -14,7 +14,7 @@ Journée du numérique du 3 décembre 2021
 
 Transforme ton micro:bit en lampe de poche numérique! 
  
-![CSSBF](https://pxt.azureedge.net/blob/3d8dede227b23aeefbdf98d433f3be87dca060ea/static/mb/projects/name-badge/header.png) 
+![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_a_5.jpg) 
 
 ## Étape 1 
 
@@ -64,7 +64,7 @@ input.onButtonPressed(Button.B, function () {
 
 ## @showdialog 
 
-Branche une pince alligator dans la broche "0" du micro:bit. 
+![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_a_1.jpg) 
 
 ## @showdialog 
 
