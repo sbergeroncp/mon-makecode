@@ -1,6 +1,6 @@
 # atelier_3_dec_b
 
-# Une lampe de poche numérique!
+# Une lampe de poche numérique! Micro:bit seulement.
 
 ## @showdialog 
 

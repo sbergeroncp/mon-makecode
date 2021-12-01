@@ -1,6 +1,6 @@
-# atelier_3_dec_d
+# atelier_3_dec_e
 
-# Transforme ton micro:bit veilleuse.
+# Un circuit électrique avec une lumière LED. (Microbit et Shield)
 
 ## @showdialog 
 
@@ -12,7 +12,7 @@ Journée du numérique du 3 décembre 2021
 
 ## @showdialog 
 
-Transforme ton micro:bit en détecteur de luminosité.
+Transforme ton micro:bit en circuit électrique. 
  
 ![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_c_7.jpg?raw=true) 
 

@@ -14,7 +14,8 @@
         "halloween.md",
         "atelier_3_dec_a.md",
         "atelier_3_dec_b.md",
-        "atelier_3_dec_d.md"
+        "atelier_3_dec_d.md",
+        "atelier_3_dec_e.md"
     ],
     "testFiles": [
         "test.ts"
