@@ -24,32 +24,24 @@ Supprime le bloc ``|| basic:au démarrage ||``.
 ## Étape 2 
 
  
-Ajoute le bloc ``|| basic: montrer LEDs ||`` dans le bloc ``||input:lorsque "secouer"||``. 
+Ajoute le bloc ``|| basic: montrer LEDs ||`` dans le bloc ``||input:lorsque le bouton A est pressé"||``. 
 
  
 Dessine un symbole dans le bloc ``|| basic: montrer LEDs ||``. 
-
  
 
 ```blocks 
 
-input.onGesture(Gesture.Shake, function () { 
-
-    basic.showLeds(` 
-
-        . . . . . 
-
-        . . . . . 
-
-        . . . . . 
-
-        . . . . . 
-
-        . . . . . 
-
-        `) 
-
-}) 
+input.onButtonPressed(Button.A, function () {
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        `)
+    basic.showIcon(IconNames.Heart)
+})
 
 ``` 
 
