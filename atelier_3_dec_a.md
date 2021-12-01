@@ -21,18 +21,20 @@ Transforme un porte-nom ordinaire en un porte-nom numérique!
 Supprime le bloc ``|| basic:au démarrage ||``. 
 
 
+## @showdialog 
+
+Ajoute une commande lorsque le micro:bit est activé. 
+
 ## Étape 2 
 
  
-Ajoute le bloc ``|| basic: montrer LEDs ||`` ou le bloc ``|| basic: montrer l'icône ||``dans le bloc ``||input:lorsque le bouton A est pressé"||``. 
+Ajoute le bloc ``|| basic: montrer LEDs ||`` ou le bloc ``|| basic: montrer l'icône ||`` dans le bloc ``||basic:toujours"||``. 
 
+ Dessine un symbole dans le bloc ``|| basic: montrer LEDs ||`` au besoin. 
  
-Dessine un symbole dans le bloc ``|| basic: montrer LEDs ||`` au besoin. 
- 
-
 ```blocks 
 
-input.onButtonPressed(Button.A, function () {
+basic.forever(function () {
     basic.showLeds(`
         . . . . .
         . . . . .
@@ -45,17 +47,16 @@ input.onButtonPressed(Button.A, function () {
 
 ``` 
 
+
 ## @showdialog 
 
-Fais apparaître un symbole lorsque tu inclines à gauche ton oeuvre d'art.  
+Ajoute une commande lorsque le bouton A est pressé.   
 
- 
 
 ## Étape 3 
 
  
-
-Ajoute le bloc ``|| basic: montrer LEDs ||`` dans le bloc ``||input:lorsque "incliner à gauche"||``. 
+Ajoute le bloc ``|| basic: afficher le texte "Hello!" ||`` dans le bloc ``||input:lorsque le bouton A est pressé||``. 
 
  
 
