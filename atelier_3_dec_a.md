@@ -1,5 +1,4 @@
 # atelier_3_dec_a
-
 # Un porte-nom numérique!
 
 ## @showdialog 
@@ -61,7 +60,6 @@ Ajoute le bloc ``|| basic: afficher le texte "Hello!" ||`` dans le bloc ``||inpu
  
 
 Dessine un symbole dans le bloc ``|| basic: montrer LEDs ||``. 
-
  
 
 ```blocks 
