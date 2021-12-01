@@ -1,6 +1,6 @@
 # atelier_3_dec_d
 
-# Transforme ton micro:bit veilleuse.
+# Transforme ton micro:bit en veilleuse.
 
 ## @showdialog 
 
@@ -12,13 +12,13 @@ Journée du numérique du 3 décembre 2021
 
 ## @showdialog 
 
-Transforme ton micro:bit en détecteur de luminosité.
+Transforme ton micro:bit veilleuse.
  
 ![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_c_7.jpg?raw=true) 
 
 ## Étape 1 
 
-Supprime les blocs ``|| basic:au démarrage ||`` ``|| basic:toujours ||``. 
+Supprime le blocs ``|| basic:au démarrage ||``. 
 
 
 ## @showdialog 

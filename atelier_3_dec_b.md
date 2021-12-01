@@ -18,7 +18,7 @@ Transforme ton micro:bit en lampe de poche numérique!
 
 ## Étape 1 
 
-Supprime les blocs ``|| basic:au démarrage ||`` ``|| basic:toujours ||``. 
+Supprime les blocs ``|| basic:au démarrage ||`` et ``|| basic:toujours ||``. 
 
 
 ## @showdialog 
