@@ -1,6 +1,6 @@
 # atelier_3_dec_d
 
-# Transforme ton micro:bit en veilleuse. (Microbit et Shield)
+# Un circuit électrique et numérique! 
 
 ## @showdialog 
 
@@ -12,113 +12,88 @@ Journée du numérique du 3 décembre 2021
 
 ## @showdialog 
 
-Transforme ton micro:bit en veilleuse.
+Transforme ton micro:bit en un circuit électrique et numérique! 
  
 ![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_c_7.jpg?raw=true) 
 
 ## Étape 1 
 
-Supprime le bloc ``|| basic:au démarrage ||``. 
+Supprime les blocs ``|| basic:au démarrage ||`` et ``|| basic:toujours ||``. 
 
 
 ## @showdialog 
 
-Ajoute une commande lorsque le micro:bit est activé. 
+Ajoute une commande lorsque le bouton A est pressé. 
 
 ## Étape 2 
 
- Ajoute le bloc ``|| logic: "Si alors sinon"  ||`` dans le bloc ``|| basic:Toujours ||``. 
+ Ajoute le bloc ``|| pins: Écrire sur la broche  ||`` dans le bloc ``||input:lorsque le bouton A est pressé||``. 
+ 
+Modifie les valeurs du bloc ``|| pins: Écrire sur la broche  ||``.
+
+Remplace la valeur sur la broche "P0" par "1".
  
 
 ```blocks 
 
-basic.forever(function () {
-    if (true) {
-    	
-    } else {
-    	
-    }
+input.onButtonPressed(Button.A, function () {
+    pins.digitalWritePin(DigitalPin.P0, 1)
 })
 
 ``` 
 
 ## @showdialog 
 
-Ajoute une condition à la séquence de programmation.   
+Ajoute une commande lorsque le bouton B est pressé.   
 
 ## Étape 3 
  
-Ajoute le bloc ``|| input: niveau d'intensité lumineuse  ||`` dans le bloc ``|| logic:"0 < 0"||``. 
- 
-Modifie la valeur de droite ``|| logic:"0 < 0"||`` à 40.
-
-Autrement dit, "si l'intensité de lumière est inférieure à "40"... un événement doit de produire.
- 
-```blocks 
-
-basic.forever(function () {
-    if (input.lightLevel() < 40) {
-    	
-    } else {
-    	
-    }
-})
-
-``` 
-
-## @showdialog 
-
-Ajoute la condition "si".   
-
-## Étape 4 
- 
-Ajoute le bloc ``|| pins: Écrire sur la broche  ||`` sous la condition ``|| logic: "Si alors sinon"  ||``. 
+Ajoute le bloc ``|| pins: Écrire sur la broche  ||`` dans le bloc ``||input:lorsque le bouton B est pressé||``. 
  
 Modifie les valeurs du bloc ``|| pins: Écrire sur la broche  ||``.
 
-Écrire sur la broche "P0" la valeur "1".
-
+Remplace la valeur sur la broche "P0" par "0".
  
 ```blocks 
 
-basic.forever(function () {
-    if (input.lightLevel() < 40) {
-        pins.digitalWritePin(DigitalPin.P0, 1)
-    } else {
-    	
-    }
+input.onButtonPressed(Button.B, function () {
+    pins.digitalWritePin(DigitalPin.P0, 0)
 })
 
 ``` 
 
 ## @showdialog 
 
-Ajoute la condition "sinon".   
-
-## Étape 6 
- 
-Ajoute le bloc ``|| pins: Écrire sur la broche  ||`` sous la condition ``|| logic: "Si alors sinon"  ||``. 
- 
-Modifie les valeurs du bloc ``|| pins: Écrire sur la broche  ||``.
-
-Écrire sur la broche "P0" la valeur "0".
-
- 
-```blocks 
-
-basic.forever(function () {
-    if (input.lightLevel() < 40) {
-        pins.digitalWritePin(DigitalPin.P0, 1)
-    } else {
-        pins.digitalWritePin(DigitalPin.P0, 0)
-    }
-})
-
-``` 
-
-## @showdialog 
-
-Félicitations! Tu as terminé de programmer ta veilleuse numérique! 
+Félicitations! Tu as terminé de programmer ton circuit! 
 
 Ensuite, appuie sur le bouton "Télécharger" pour accéder à l'application MakeCode/Micro:bit.
 
+## @showdialog 
+
+![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_c_1.jpg?raw=true) 
+
+Insère le micro:bit dans le bouclier.
+
+![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_c_2.jpg?raw=true) 
+
+## @showdialog 
+
+
+Branche la lumière LED dans le port "P0" du bouclier.
+
+Attention à bien insèrer le fil dans le bon sens.
+
+![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_c_3.jpg?raw=true) 
+
+![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_c_4.jpg?raw=true)
+
+![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_c_5.jpg?raw=true)
+
+## @showdialog 
+
+
+Félicitations! Tu as terminé ton premier circuit électrique et numérique.
+
+![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_c_6.jpg?raw=true) 
+
+Teste maintenant ton circuit!
