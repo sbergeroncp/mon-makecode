@@ -64,7 +64,13 @@ input.onButtonPressed(Button.B, function () {
 
 ## @showdialog 
 
-Branche une pince crocodile au port "P0" du micro:bit.
+Félicitations! Tu as terminé de programmer ta lampe de poche numérique! 
+
+Ensuite, appuie sur le bouton "Télécharger" pour accéder à l'application MakeCode/Micro:bit.
+
+## @showdialog 
+
+Branche une pince alligator au port "P0" du micro:bit.
 
 ![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_a_1.jpg?raw=true) 
 
@@ -87,3 +93,11 @@ Relis la même pince alligator à la lumière LED à la broche négative. Il s'a
 Attention, les deux broches ne doivent pas se toucher!
 
 ![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_a_4.jpg?raw=true) 
+
+## @showdialog 
+
+Félicitations! Tu as terminé ton premier circuit électrique.
+
+![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_a_5.jpg?raw=true) 
+
+Teste maintenant ta lampe de poche numérique!
