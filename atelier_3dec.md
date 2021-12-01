@@ -12,7 +12,7 @@ Transforme ce porte-nom ordinaire en porte-nom numérique!
 
 ![CSSBF](https://github.com/sbergeroncp/tuto/blob/master/dice.png?raw=true)
 
-## Étape 1
+## @showdialog
 
 Ajoute ``|| basic:Montrer l'icône ||`` dans le bloc ``|| basic:Toujours ||``.
 
@@ -35,7 +35,8 @@ basic.forever(function () {
         `)
 })
 ```
-## Étape 2
+
+## @showdialog
 
 Ajoute ``|| basic:Afficher texte ||`` dans le bloc ``|| input:Lorsque le bouton A est pressé ||``.
 
@@ -47,7 +48,7 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
-## Étape 3
+## @showdialog
 
 Ajoute ``|| basic:Afficher texte ||`` dans le bloc ``|| input:Lorsque le bouton B est pressé ||``.
 
@@ -59,7 +60,7 @@ input.onButtonPressed(Button.B, function () {
 })
 ```
 
-## Étape 4
+## @showdialog
 
 Ajoute trois blocs ``|| basic:Montrer LEDs ||`` dans le bloc ``|| Loops:Répéter 2 fois||``.
 
@@ -100,7 +101,7 @@ input.onButtonPressed(Button.AB, function () {
 })
 ```
 
-## Étape 5
+## @showdialog
 
 Teste le programme à l'aide du simulateur. Fonctionne-t-il ?
 
