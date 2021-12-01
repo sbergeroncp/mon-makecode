@@ -64,7 +64,7 @@ input.onButtonPressed(Button.B, function () {
 
 ## @showdialog 
 
-![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_a_1.jpg) 
+![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_a_1.jpg?raw=true) 
 
 ## @showdialog 
 
