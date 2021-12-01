@@ -18,7 +18,7 @@ Transforme ton micro:bit veilleuse.
 
 ## Étape 1 
 
-Supprime le blocs ``|| basic:au démarrage ||``. 
+Supprime le bloc ``|| basic:au démarrage ||``. 
 
 
 ## @showdialog 
