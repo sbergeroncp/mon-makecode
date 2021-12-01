@@ -46,7 +46,6 @@ basic.forever(function () {
 
 ``` 
 
-
 ## @showdialog 
 
 Ajoute une commande lorsque le bouton A est pressé.   
@@ -59,129 +58,72 @@ Ajoute le bloc ``|| basic: afficher le texte "Hello!" ||`` dans le bloc ``||inpu
 
  
 
-Dessine un symbole dans le bloc ``|| basic: montrer LEDs ||``. 
+Modifie le bloc ``|| basic: Afficher texte ||`` et écris ton prénom. 
  
 
 ```blocks 
 
-input.onGesture(Gesture.TiltLeft, function () { 
-
-    basic.showLeds(` 
-
-        . . . . . 
-
-        . . . . . 
-
-        . . . . . 
-
-        . . . . . 
-
-        . . . . . 
-
-        `) 
-
-}) 
+input.onButtonPressed(Button.A, function () {
+    basic.showString("Hello!")
+})
 
 ``` 
+
+## @showdialog 
+
+Ajoute une commande lorsque le bouton B est pressé.   
+
 
 ## Étape 4 
- 
-Ajoute le bloc ``|| basic: montrer LEDs ||`` dans le bloc ``||input:lorsque "incliner à droite"||``. 
 
  
+Ajoute le bloc ``|| basic: afficher le texte "Hello!" ||`` dans le bloc ``||input:lorsque le bouton B est pressé||``. 
 
-Dessine un symbole dans le bloc ``|| basic: montrer LEDs ||``. 
+ 
 
+Modifie le bloc ``|| basic: Afficher texte ||`` et écris ton nom de famille.
  
 
 ```blocks 
 
-input.onGesture(Gesture.TiltRight, function () { 
-
-    basic.showLeds(` 
-
-        . . . . . 
-
-        . . . . . 
-
-        . . . . . 
-
-        . . . . . 
-
-        . . . . . 
-
-        `) 
-
-}) 
+input.onButtonPressed(Button.B, function () {
+    basic.showString("Hello!")
+})
 
 ``` 
 
- 
+## @showdialog 
+
+Ajoute une commande lorsque le bouton A+B est pressé.   
+
 
 ## Étape 5 
 
-
-Ajoute le bloc ``|| basic: afficher texte ||`` dans le bloc ``||input:lorsque le bouton "A" est pressé||``. 
+ 
+Ajoute le bloc ``|| basic: montrer LEDs ||`` et le bloc ``|| basic: pause (ms) "100" ||`` dans le bloc ``||input:lorsque le bouton A+B est pressé||``. 
 
  
-
-Remplace le texte "Hello!" par une onomatopée. 
-
+Crée une petite animination avec trois blocs ``|| basic: montrer LEDs ||`` et trois blocs ``|| basic: pause (ms) "100" ||``.
  
-
-```blocks 
-
-input.onButtonPressed(Button.A, function () { 
-
-    basic.showString("Hello!") 
-
-}) 
-
-``` 
-
- 
-
-## Étape 6 
-
-Ajoute le bloc ``|| basic: afficher texte ||`` dans le bloc ``||input:lorsque le bouton "B" est pressé||``. 
-
- 
-
-Remplace le texte "Hello!" par "Joyeuse Halloween!". 
-
- 
-
-```blocks 
-
-input.onButtonPressed(Button.B, function () { 
-
-    basic.showString("Hello!") 
-
-}) 
-
-``` 
-
-## Étape 7 
-
-Invente une commande avec les blocs de ton choix lorsque tu appuies simmultanément sur les boutons A + B. 
 
 ```blocks 
 
 input.onButtonPressed(Button.AB, function () {
-    basic.showIcon(IconNames.Target)
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        `)
     basic.pause(100)
-    basic.showString("Hello!")
-}) 
+})
 
 ``` 
 
- 
-
 ## @showdialog 
 
-Félicitations! Tu as terminé de programmer ton Micro:bit d'Halloween! 
-
-Une fois terminé, fais valider le travail par un adulte.
+Félicitations! Tu as terminé de programmer ton porte-nom numérique! 
 
 Ensuite, appuie sur le bouton "Télécharger" pour accéder à l'application MakeCode/Micro:bit.
 
