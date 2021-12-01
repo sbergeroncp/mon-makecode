@@ -27,7 +27,7 @@ Ajoute une commande lorsque le micro:bit est activé.
 
 ## Étape 2 
 
- Ajoute le bloc ``|| logic: "Si alors sinon"  ||`` dans le bloc ``|| basic:Toujours ||``. 
+ Ajoute le bloc ``|| logic: "si alors sinon"  ||`` dans le bloc ``|| basic:toujours ||``. 
  
 
 ```blocks 
@@ -72,7 +72,7 @@ Ajoute la condition "si".
 
 ## Étape 4 
  
-Ajoute le bloc ``|| pins: Écrire sur la broche  ||`` sous la condition ``|| logic: "Si alors sinon"  ||``. 
+Ajoute le bloc ``|| pins: écrire sur la broche  ||`` sous la condition ``|| logic: "si alors sinon"  ||``. 
  
 Modifie les valeurs du bloc ``|| pins: Écrire sur la broche  ||``.
 
@@ -97,7 +97,7 @@ Ajoute la condition "sinon".
 
 ## Étape 6 
  
-Ajoute le bloc ``|| pins: Écrire sur la broche  ||`` sous la condition ``|| logic: "Si alors sinon"  ||``. 
+Ajoute le bloc ``|| pins: écrire sur la broche  ||`` sous la condition ``|| logic: "si alors sinon"  ||``. 
  
 Modifie les valeurs du bloc ``|| pins: Écrire sur la broche  ||``.
 
@@ -110,6 +110,84 @@ basic.forever(function () {
     if (input.lightLevel() < 40) {
         pins.digitalWritePin(DigitalPin.P0, 1)
     } else {
+        pins.digitalWritePin(DigitalPin.P0, 0)
+    }
+})
+
+``` 
+
+## @showdialog 
+
+Crée une variable.   
+
+## Étape 7 
+ 
+Crée un bloc ``|| variables: Luminosité  ||``.
+ 
+ 
+## @showdialog 
+
+Définis la valeur de la variable par défaut.   
+
+## Étape 8
+ 
+Ajoute le bloc ``|| input: niveau de luminosité  ||`` dans le bloc ``|| variables: définir "Luminosité" à "0"  ||``.
+
+```blocks 
+
+let Luminosité = 0
+basic.forever(function () {
+    Luminosité = input.lightLevel()
+    if (input.lightLevel() < 40) {
+        pins.digitalWritePin(DigitalPin.P0, 1)
+    } else {
+        pins.digitalWritePin(DigitalPin.P0, 0)
+    }
+})
+
+``` 
+
+# @showdialog 
+
+Fais afficher le niveau d'intensité lumineuse sur le micro:bit lorsque l'intensité est inférieure à "40".    
+
+## Étape 9
+ 
+Ajoute le bloc ``|| variables: Luminosité  ||`` dans le bloc ``|| basic: afficher le texte  ||`` sous la condition "si".
+
+```blocks 
+
+let Luminosité = 0
+basic.forever(function () {
+    Luminosité = input.lightLevel()
+    if (input.lightLevel() < 40) {
+        basic.showString("" + (Luminosité))
+        pins.digitalWritePin(DigitalPin.P0, 1)
+    } else {
+        pins.digitalWritePin(DigitalPin.P0, 0)
+    }
+})
+
+``` 
+
+# @showdialog 
+
+Fais afficher le niveau d'intensité lumineuse sur le micro:bit lorsque l'intensité est supérieure à "40".    
+
+## Étape 9
+ 
+Ajoute le bloc ``|| variables: Luminosité  ||`` dans le bloc ``|| basic: afficher le texte  ||`` sous la condition "sinon".
+
+```blocks 
+
+let Luminosité = 0
+basic.forever(function () {
+    Luminosité = input.lightLevel()
+    if (input.lightLevel() < 40) {
+        basic.showString("" + (Luminosité))
+        pins.digitalWritePin(DigitalPin.P0, 1)
+    } else {
+        basic.showString("" + (Luminosité))
         pins.digitalWritePin(DigitalPin.P0, 0)
     }
 })
