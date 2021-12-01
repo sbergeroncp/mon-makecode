@@ -13,7 +13,8 @@
         "chiffres_des.md",
         "halloween.md",
         "atelier_3_dec_a.md",
-        "atelier_3_dec_b.md"
+        "atelier_3_dec_b.md",
+        "atelier_3_dec_d.md"
     ],
     "testFiles": [
         "test.ts"
