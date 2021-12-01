@@ -20,5 +20,32 @@ Sélectionne l'icône de ton choix.
 
 Tu peux également choisir ``|| basic:Montrer LEDs... ||`` afin de personnaliser l'icône.
 
+```blocks
+basic.forever(function () {
+    basic.showIcon(IconNames.Heart)
+})
+
+basic.forever(function () {
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        `)
+})
+```
+
+```blocks
+basic.forever(function () {
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        `)
+})
+```
 ## Étape 2
 
