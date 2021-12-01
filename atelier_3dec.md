@@ -14,11 +14,11 @@ Transforme ce porte-nom ordinaire en porte-nom numérique!
 
 ## Étape 1
 
-Ajoute ``|| basic:Montrer l'icône... ||`` dans le bloc ``|| basic:Toujours... ||``
+Ajoute ``|| basic:Montrer l'icône ||`` dans le bloc ``|| basic:Toujours ||``.
 
 Sélectionne l'icône de ton choix. 
 
-Tu peux également choisir ``|| basic:Montrer LEDs... ||`` afin de personnaliser l'icône.
+Tu peux également choisir ``|| basic:Montrer LEDs ||`` afin de personnaliser l'icône.
 
 ```blocks
 basic.forever(function () {
@@ -35,17 +35,65 @@ basic.forever(function () {
         `)
 })
 ```
-
-```blocks
-basic.forever(function () {
-    basic.showLeds(`
-        . . . . .
-        . . . . .
-        . . . . .
-        . . . . .
-        . . . . .
-        `)
-})
-```
 ## Étape 2
 
+Ajoute ``|| basic:Afficher texte ||`` dans le bloc ``|| input:Lorsque le bouton A est pressé ||``.
+
+Remplace le texte "Hello" par ton prénom.
+```blocks
+input.onButtonPressed(Button.A, function () {
+    basic.showString("Hello!")
+})
+```
+
+## Étape 3
+
+Ajoute ``|| basic:Afficher texte ||`` dans le bloc ``|| input:Lorsque le bouton B est pressé ||``.
+
+Remplace le texte "Hello" par ton nom de famille.
+```blocks
+input.onButtonPressed(Button.B, function () {
+    basic.showString("Hello!")
+})
+```
+
+## Étape 4
+
+Ajoute trois blocs ``|| basic:Montrer LEDs ||`` dans le bloc ``|| Loops:Répéter 2 fois||``.
+
+Ensuite, ajoute ces derniers dans le bloc ``|| input:Lorsque le bouton A+B est pressé ||``. 
+
+Personnalise les trois icônes.
+
+Ajoute un bloc ``|| basic:Pause (100ms) ||`` après chaque icône.
+
+```blocks
+input.onButtonPressed(Button.AB, function () {
+    for (let index = 0; index < 2; index++) {
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            `)
+        basic.pause(100)
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            `)
+        basic.pause(100)
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            `)
+        basic.pause(100)
+    }
+})
+```
