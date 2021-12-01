@@ -1,6 +1,6 @@
 # atelier_3_dec_e
 
-# Un circuit électrique avec une lumière LED. (Microbit et Shield)
+# Transforme ton micro:bit en veilleuse. (Microbit et Shield)
 
 ## @showdialog 
 
@@ -12,86 +12,191 @@ Journée du numérique du 3 décembre 2021
 
 ## @showdialog 
 
-Transforme ton micro:bit en circuit électrique. 
+Transforme ton micro:bit en veilleuse.
  
 ![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_c_7.jpg?raw=true) 
 
 ## Étape 1 
 
-Supprime les blocs ``|| basic:au démarrage ||`` et ``|| basic:toujours ||``. 
+Supprime le bloc ``|| basic:au démarrage ||``. 
 
 
 ## @showdialog 
 
-Ajoute une commande lorsque le bouton A est pressé. 
+Ajoute une commande lorsque le micro:bit est activé. 
 
 ## Étape 2 
 
- Ajoute le bloc ``|| pins: Écrire sur la broche  ||`` dans le bloc ``||input:lorsque le bouton A est pressé||``. 
+ Ajoute le bloc ``|| logic: "si alors sinon"  ||`` dans le bloc ``|| basic:toujours ||``. 
+ 
+
+```blocks 
+
+basic.forever(function () {
+    if (true) {
+    	
+    } else {
+    	
+    }
+})
+
+``` 
+
+## @showdialog 
+
+Ajoute une condition à la séquence de programmation.   
+
+## Étape 3 
+ 
+Ajoute le bloc ``|| input: niveau d'intensité lumineuse  ||`` dans le bloc ``|| logic:"0 < 0"||``. 
+ 
+Modifie la valeur de droite ``|| logic:"0 < 0"||`` à 40.
+
+Autrement dit, "si l'intensité de lumière est inférieure à "40"... un événement doit de produire.
+ 
+```blocks 
+
+basic.forever(function () {
+    if (input.lightLevel() < 40) {
+    	
+    } else {
+    	
+    }
+})
+
+``` 
+
+## @showdialog 
+
+Ajoute la condition "si".   
+
+## Étape 4 
+ 
+Ajoute le bloc ``|| pins: écrire sur la broche  ||`` sous la condition ``|| logic: "si alors sinon"  ||``. 
  
 Modifie les valeurs du bloc ``|| pins: Écrire sur la broche  ||``.
 
 Écrire sur la broche "P0" la valeur "1".
- 
 
+ 
 ```blocks 
 
-input.onButtonPressed(Button.A, function () {
-    pins.digitalWritePin(DigitalPin.P0, 1)
+basic.forever(function () {
+    if (input.lightLevel() < 40) {
+        pins.digitalWritePin(DigitalPin.P0, 1)
+    } else {
+    	
+    }
 })
 
 ``` 
 
 ## @showdialog 
 
-Ajoute une commande lorsque le bouton B est pressé.   
+Ajoute la condition "sinon".   
 
-## Étape 3 
+## Étape 6 
  
-Ajoute le bloc ``|| pins: Écrire sur la broche  ||`` dans le bloc ``||input:lorsque le bouton B est pressé||``. 
+Ajoute le bloc ``|| pins: écrire sur la broche  ||`` sous la condition ``|| logic: "si alors sinon"  ||``. 
  
 Modifie les valeurs du bloc ``|| pins: Écrire sur la broche  ||``.
 
 Écrire sur la broche "P0" la valeur "0".
+
  
 ```blocks 
 
-input.onButtonPressed(Button.B, function () {
-    pins.digitalWritePin(DigitalPin.P0, 0)
+basic.forever(function () {
+    if (input.lightLevel() < 40) {
+        pins.digitalWritePin(DigitalPin.P0, 1)
+    } else {
+        pins.digitalWritePin(DigitalPin.P0, 0)
+    }
 })
 
 ``` 
 
 ## @showdialog 
 
-Félicitations! Tu as terminé de programmer ton premier circuit électrique! 
+Crée une variable.   
+
+## Étape 7 
+ 
+Crée un bloc ``|| variables: Luminosité  ||``.
+ 
+ 
+## @showdialog 
+
+Définis la valeur de la variable par défaut.   
+
+## Étape 8
+ 
+Ajoute le bloc ``|| input: niveau de luminosité  ||`` dans le bloc ``|| variables: définir "Luminosité" à "0"  ||``.
+
+```blocks 
+
+let Luminosité = 0
+basic.forever(function () {
+    Luminosité = input.lightLevel()
+    if (input.lightLevel() < 40) {
+        pins.digitalWritePin(DigitalPin.P0, 1)
+    } else {
+        pins.digitalWritePin(DigitalPin.P0, 0)
+    }
+})
+
+``` 
+
+# @showdialog 
+
+Fais afficher le niveau d'intensité lumineuse sur le micro:bit lorsque l'intensité est inférieure à "40".    
+
+## Étape 9
+ 
+Ajoute le bloc ``|| variables: Luminosité  ||`` dans le bloc ``|| basic: afficher le texte  ||`` sous la condition "si".
+
+```blocks 
+
+let Luminosité = 0
+basic.forever(function () {
+    Luminosité = input.lightLevel()
+    if (input.lightLevel() < 40) {
+        basic.showString("" + (Luminosité))
+        pins.digitalWritePin(DigitalPin.P0, 1)
+    } else {
+        pins.digitalWritePin(DigitalPin.P0, 0)
+    }
+})
+
+``` 
+
+# @showdialog 
+
+Fais afficher le niveau d'intensité lumineuse sur le micro:bit lorsque l'intensité est supérieure à "40".    
+
+## Étape 9
+ 
+Ajoute le bloc ``|| variables: Luminosité  ||`` dans le bloc ``|| basic: afficher le texte  ||`` sous la condition "sinon".
+
+```blocks 
+
+let Luminosité = 0
+basic.forever(function () {
+    Luminosité = input.lightLevel()
+    if (input.lightLevel() < 40) {
+        basic.showString("" + (Luminosité))
+        pins.digitalWritePin(DigitalPin.P0, 1)
+    } else {
+        basic.showString("" + (Luminosité))
+        pins.digitalWritePin(DigitalPin.P0, 0)
+    }
+})
+
+``` 
+
+## @showdialog 
+
+Félicitations! Tu as terminé de programmer ta veilleuse numérique! 
 
 Ensuite, appuie sur le bouton "Télécharger" pour accéder à l'application MakeCode/Micro:bit.
 
-## @showdialog 
-
-Insère le micro:bit dans le bouclier.
-
-![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_c_1.jpg?raw=true) 
-
-![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_c_2.jpg?raw=true) 
-
-## @showdialog 
-
-Branche la lumière LED dans le bouclier dans le port "P0".
-
-Assure-toi de brancher la lumière LED dans le bon sens.
-
-![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_c_3.jpg?raw=true) 
-
-![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_c_4.jpg?raw=true) 
-
-![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_c_5.jpg?raw=true) 
-
-## @showdialog 
-
-Félicitations! Tu as terminé ton premier circuit électrique.
-
-Teste maintenant le circuit électrique.
-
-![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_c_6.jpg?raw=true)  

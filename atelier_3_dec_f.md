@@ -1,6 +1,6 @@
-# atelier_3_dec_d
+# atelier_3_dec_f
 
-# Transforme ton micro:bit en veilleuse. (Microbit et Shield)
+# Transforme ton micro:bit en veilleuse. (Microbit seulement)
 
 ## @showdialog 
 
