@@ -14,7 +14,7 @@ Journée du numérique du 3 décembre 2021
 
 Transforme ton micro:bit en lampe de poche numérique! 
  
-![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_a_5.jpg) 
+![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_a_5.jpg?raw=true) 
 
 ## Étape 1 
 
@@ -64,18 +64,26 @@ input.onButtonPressed(Button.B, function () {
 
 ## @showdialog 
 
+Branche une pince crocodile au port "P0" du micro:bit.
+
 ![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_a_1.jpg?raw=true) 
 
 ## @showdialog 
 
 Relis la même pince alligator à la lumière LED à la broche positive. Il s'agit de la plus longue.
 
+![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_a_2.jpg?raw=true) 
+
 ## @showdialog 
 
-Branche une autre pince alligator dans la broche "GND" du micro:bit. 
+Branche une autre pince alligator dans le port "GND" du micro:bit. 
+
+![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_a_3.jpg?raw=true) 
 
 ## @showdialog 
 
 Relis la même pince alligator à la lumière LED à la broche négative. Il s'agit de la plus petite.
 
 Attention, les deux broches ne doivent pas se toucher!
+
+![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_a_4.jpg?raw=true) 
