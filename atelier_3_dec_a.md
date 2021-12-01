@@ -55,7 +55,6 @@ Ajoute une commande lorsque le bouton A est pressé.
 
  
 Ajoute le bloc ``|| basic: afficher le texte "Hello!" ||`` dans le bloc ``||input:lorsque le bouton A est pressé||``. 
-
  
 
 Modifie le bloc ``|| basic: Afficher texte ||`` et écris ton prénom. 
