@@ -1,5 +1,5 @@
 {
-    "name": "Mon MakeCode",
+    "name": "Atelier - 3 décembre 2021",
     "description": "",
     "dependencies": {
         "core": "*",
@@ -11,7 +11,8 @@
         "main.ts",
         "README.md",
         "chiffres_des.md",
-        "halloween.md"
+        "halloween.md",
+        "atelier_3dec.md"
     ],
     "testFiles": [
         "test.ts"
