@@ -14,21 +14,19 @@ Transforme ce porte-nom ordinaire en porte-nom numérique!
 
 ![CSSBF](https://github.com/sbergeroncp/tuto/blob/master/dice.png?raw=true)
  
-
 ## Étape 1 
 
-Supprime les blocs ``|| basic:au démarrage ||`` et ``||basic:toujours||``. 
+Supprime le bloc ``|| basic:au démarrage ||``. 
 
 
 ## Étape 2 
 
  
-Ajoute le bloc ``|| basic: montrer LEDs ||`` dans le bloc ``||input:lorsque "secouer"||``. 
+Ajoute le bloc ``|| basic: montrer LEDs ||`` dans le bloc ``||basic:Toujours||``. 
 
  
 Dessine un symbole dans le bloc ``|| basic: montrer LEDs ||``. 
 
- 
 
 ```blocks 
 
