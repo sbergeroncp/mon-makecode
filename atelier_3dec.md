@@ -1,4 +1,4 @@
-# atelier_3dec
+# Atelier 3 décembre
 
 ## @showdialog
 Ce tutoriel a été réalisé par l'équipe d'intégration du numérique du Centre de services scolaire des Bois-Francs.
@@ -12,7 +12,12 @@ Transforme ce porte-nom ordinaire en porte-nom numérique!
 
 ![CSSBF](https://github.com/sbergeroncp/tuto/blob/master/dice.png?raw=true)
 
+
 ## @showdialog
+
+Ajoute une commande lorsque le micro:bit est activé.
+
+## Étape 1
 
 Ajoute ``|| basic:Montrer l'icône ||`` dans le bloc ``|| basic:Toujours ||``.
 
@@ -40,7 +45,8 @@ basic.forever(function () {
 
 Ajoute une commande lorsque le bouton A est pressé.
 
-## Étape 1
+## Étape 2
+
 
 Ajoute ``|| basic:Afficher texte ||`` dans le bloc ``|| input:Lorsque le bouton A est pressé ||``.
 
@@ -48,15 +54,10 @@ Remplace le texte "Hello" par ton prénom.
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
-    basic.showString("Sebastien")
+    basic.showString("Hello!")
 })
 ```
 
-## @showdialog
-
-Ajoute une commande lorsque le bouton B est pressé.
-
-## Étape 2
 
 Ajoute ``|| basic:Afficher texte ||`` dans le bloc ``|| input:Lorsque le bouton B est pressé ||``.
 
@@ -64,7 +65,7 @@ Remplace le texte "Hello" par ton nom de famille.
 
 ```blocks
 input.onButtonPressed(Button.B, function () {
-    basic.showString("Bergeron")
+    basic.showString("Hello!")
 })
 ```
 ## @showdialog
