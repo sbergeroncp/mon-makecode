@@ -40,9 +40,10 @@ basic.forever(function () {
 Ajoute ``|| basic:Afficher texte ||`` dans le bloc ``|| input:Lorsque le bouton A est pressé ||``.
 
 Remplace le texte "Hello" par ton prénom.
+
 ```blocks
 input.onButtonPressed(Button.A, function () {
-    basic.showString("Hello!")
+    basic.showString("Sebastien")
 })
 ```
 
@@ -51,9 +52,10 @@ input.onButtonPressed(Button.A, function () {
 Ajoute ``|| basic:Afficher texte ||`` dans le bloc ``|| input:Lorsque le bouton B est pressé ||``.
 
 Remplace le texte "Hello" par ton nom de famille.
+
 ```blocks
 input.onButtonPressed(Button.B, function () {
-    basic.showString("Hello!")
+    basic.showString("Bergeron")
 })
 ```
 
@@ -97,3 +99,13 @@ input.onButtonPressed(Button.AB, function () {
     }
 })
 ```
+
+## Étape 5
+
+Teste le programme à l'aide du simulateur. Fonctionne-t-il ?
+
+Télécharge le programme dans le micro:bit!
+
+Teste le programme. Fonctionne-t-il ?
+
+Montre le porte-nom aux autres !
