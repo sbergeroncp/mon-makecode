@@ -61,3 +61,21 @@ input.onButtonPressed(Button.B, function () {
 })
 
 ``` 
+
+## @showdialog 
+
+Branche une pince alligator dans la broche "0" du micro:bit. 
+
+## @showdialog 
+
+Relis la même pince alligator à la lumière LED à la broche positive. Il s'agit de la plus longue.
+
+## @showdialog 
+
+Branche une autre pince alligator dans la broche "GND" du micro:bit. 
+
+## @showdialog 
+
+Relis la même pince alligator à la lumière LED à la broche négative. Il s'agit de la plus petite.
+
+Attention, les deux broches ne doivent pas se toucher!
