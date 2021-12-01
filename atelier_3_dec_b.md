@@ -1,6 +1,6 @@
 # atelier_3_dec_b
 
-# Une lampe de poche numérique! Micro:bit seulement.
+# Un circuit électrique et numérique! 
 
 ## @showdialog 
 
@@ -12,7 +12,7 @@ Journée du numérique du 3 décembre 2021
 
 ## @showdialog 
 
-Transforme ton micro:bit en lampe de poche numérique! 
+Transforme ton micro:bit en un circuit électrique et numérique! 
  
 ![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_a_5.jpg?raw=true) 
 
@@ -31,7 +31,7 @@ Ajoute une commande lorsque le bouton A est pressé.
  
 Modifie les valeurs du bloc ``|| pins: Écrire sur la broche  ||``.
 
-Écrire sur la broche "P0" la valeur "1".
+Remplace la valeur sur la broche "P0" par "1".
  
 
 ```blocks 
@@ -52,7 +52,7 @@ Ajoute le bloc ``|| pins: Écrire sur la broche  ||`` dans le bloc ``||input:lor
  
 Modifie les valeurs du bloc ``|| pins: Écrire sur la broche  ||``.
 
-Écrire sur la broche "P0" la valeur "0".
+Remplace la valeur sur la broche "P0" par "0".
  
 ```blocks 
 
@@ -64,7 +64,7 @@ input.onButtonPressed(Button.B, function () {
 
 ## @showdialog 
 
-Félicitations! Tu as terminé de programmer ta lampe de poche numérique! 
+Félicitations! Tu as terminé de programmer ton circuit! 
 
 Ensuite, appuie sur le bouton "Télécharger" pour accéder à l'application MakeCode/Micro:bit.
 
@@ -72,11 +72,15 @@ Ensuite, appuie sur le bouton "Télécharger" pour accéder à l'application Mak
 
 Branche une pince alligator au port "P0" du micro:bit.
 
+La couleur n'a pas d'importance!
+
 ![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_a_1.jpg?raw=true) 
 
 ## @showdialog 
 
-Relis la même pince alligator à la lumière LED à la broche positive. Il s'agit de la plus longue.
+Relis la même pince alligator à une lumière LED à la broche positive. Il s'agit de la plus longue.
+
+La couleur n'a pas d'importance!
 
 ![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_a_2.jpg?raw=true) 
 
@@ -88,7 +92,7 @@ Branche une autre pince alligator dans le port "GND" du micro:bit.
 
 ## @showdialog 
 
-Relis la même pince alligator à la lumière LED à la broche négative. Il s'agit de la plus petite.
+Relis la même pince alligator de la lumière LED à la broche négative. Il s'agit de la plus petite.
 
 Attention, les deux broches ne doivent pas se toucher!
 
@@ -96,8 +100,8 @@ Attention, les deux broches ne doivent pas se toucher!
 
 ## @showdialog 
 
-Félicitations! Tu as terminé ton premier circuit électrique.
+Félicitations! Tu as terminé ton premier circuit électrique et numérique.
 
 ![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_a_5.jpg?raw=true) 
 
-Teste maintenant ta lampe de poche numérique!
+Teste maintenant ton circuit!
