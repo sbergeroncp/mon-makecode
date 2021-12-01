@@ -36,7 +36,7 @@ basic.forever(function () {
 })
 ```
 
-## @showdialog
+## Étape
 
 Ajoute ``|| basic:Afficher texte ||`` dans le bloc ``|| input:Lorsque le bouton A est pressé ||``.
 
@@ -48,7 +48,7 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
-## @showdialog
+## Étape
 
 Ajoute ``|| basic:Afficher texte ||`` dans le bloc ``|| input:Lorsque le bouton B est pressé ||``.
 
@@ -60,7 +60,7 @@ input.onButtonPressed(Button.B, function () {
 })
 ```
 
-## @showdialog
+## Étape
 
 Ajoute trois blocs ``|| basic:Montrer LEDs ||`` dans le bloc ``|| Loops:Répéter 2 fois||``.
 
@@ -101,7 +101,7 @@ input.onButtonPressed(Button.AB, function () {
 })
 ```
 
-## @showdialog
+## Étape
 
 Teste le programme à l'aide du simulateur. Fonctionne-t-il ?
 
