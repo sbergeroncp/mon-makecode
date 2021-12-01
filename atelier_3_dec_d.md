@@ -92,6 +92,6 @@ Assure-toi de brancher la lumière LED dans le bon sens.
 
 Félicitations! Tu as terminé ton premier circuit électrique.
 
-![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_c_6.jpg?raw=true)  
+Teste maintenant le circuit électrique.
 
-Teste maintenant le circuit électrique avec une lumière LED.
+![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_c_6.jpg?raw=true)  
