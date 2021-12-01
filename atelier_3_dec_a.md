@@ -24,10 +24,10 @@ Supprime le bloc ``|| basic:au démarrage ||``.
 ## Étape 2 
 
  
-Ajoute le bloc ``|| basic: montrer LEDs ||`` dans le bloc ``||input:lorsque le bouton A est pressé"||``. 
+Ajoute le bloc ``|| basic: montrer LEDs ||`` ou le bloc ``|| basic: montrer l'icône ||``dans le bloc ``||input:lorsque le bouton A est pressé"||``. 
 
  
-Dessine un symbole dans le bloc ``|| basic: montrer LEDs ||``. 
+Dessine un symbole dans le bloc ``|| basic: montrer LEDs ||`` au besoin. 
  
 
 ```blocks 
