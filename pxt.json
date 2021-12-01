@@ -12,7 +12,8 @@
         "README.md",
         "chiffres_des.md",
         "halloween.md",
-        "atelier_3_dec_a.md"
+        "atelier_3_dec_a.md",
+        "atelier_3_dec_b.md"
     ],
     "testFiles": [
         "test.ts"
