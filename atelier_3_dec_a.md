@@ -27,7 +27,7 @@ Ajoute une commande lorsque le micro:bit est activé.
 ## Étape 2 
 
  
-Ajoute le bloc ``|| basic: montrer LEDs ||`` ou le bloc ``|| basic: montrer l'icône ||`` dans le bloc ``||basic:toujours"||``. 
+Ajoute le bloc ``|| basic: montrer LEDs ||`` ou le bloc ``|| basic: montrer l'icône ||`` dans le bloc ``||basic:toujours||``. 
 
  Dessine un symbole dans le bloc ``|| basic: montrer LEDs ||`` au besoin. 
  
