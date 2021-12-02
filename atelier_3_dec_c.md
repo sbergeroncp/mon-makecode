@@ -109,8 +109,29 @@ Branche une pince alligator dans le port "3V" du micro:bit.
 Branche une pince alligator dans le port "GND" du micro:bit.
 
 
-Félicitations! Tu as terminé ton premier circuit électrique et numérique.
+## @showdialog 
 
-![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_c_6.jpg?raw=true) 
+![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_b_4.jpg?raw=true) 
+
+Relis la pince alligator branchée dans le port "P0" du micro:bit dans la branche jaune du servomoteur.
+
+
+## @showdialog 
+
+![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_b_5.jpg?raw=true) 
+
+Relis la pince alligator branchée dans le port "3V" du micro:bit dans la branche centrale du servomoteur.
+
+## @showdialog 
+
+![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_b_6.jpg?raw=true) 
+
+Relis la pince alligator branchée dans le port "GND" du micro:bit dans la dernière branche du servomoteur.
+
+## @showdialog 
+
+Félicitations! Tu as terminé les branchements de ton  circuit électrique et numérique.
+
+![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_b_7.jpg?raw=true) 
 
 Teste maintenant ton circuit!
