@@ -27,176 +27,57 @@ Ajoute une commande lorsque le bouton A est pressé.
 
 ## Étape 2 
 
- Ajoute le bloc ``|| logic: "si alors sinon"  ||`` dans le bloc ``|| basic:toujours ||``. 
+ Ajoute le bloc ``|| music: "jouer la mélodie"  ||`` dans le bloc ``|| input:lorsque le bouton A est pressé ||``. 
  
+Sélectionne une mélodie.
 
 ```blocks 
 
-basic.forever(function () {
-    if (true) {
-    	
-    } else {
-    	
-    }
+input.onButtonPressed(Button.A, function () {
+    music.playMelody("- - - - - - - - ", 120)
 })
 
 ``` 
 
 ## @showdialog 
 
-Ajoute une condition à la séquence de programmation.   
+Ajoute une commande lorsque le bouton B est pressé.  
 
 ## Étape 3 
  
-Ajoute le bloc ``|| input: niveau d'intensité lumineuse  ||`` dans le bloc ``|| logic:"0 < 0"||``. 
+Ajoute le bloc ``|| music: "jouer la mélodie"  ||`` dans le bloc ``|| input:lorsque le bouton B est pressé ||``. 
  
-Modifie la valeur de droite ``|| logic:"0 < 0"||`` à 40.
+ Sélectionne une mélodie
 
-Autrement dit, "si l'intensité de lumière est inférieure à "40"... un événement doit de produire.
- 
 ```blocks 
 
-basic.forever(function () {
-    if (input.lightLevel() < 40) {
-    	
-    } else {
-    	
-    }
+input.onButtonPressed(Button.B, function () {
+    music.startMelody(music.builtInMelody(Melodies.Dadadadum), MelodyOptions.Once)
 })
 
 ``` 
 
 ## @showdialog 
 
-Ajoute une condition "si".   
+Ajoute une commande lorsque le bouton A+B est pressé.  
 
 ## Étape 4 
  
-Ajoute le bloc ``|| pins: écrire sur la broche  ||`` sous la condition ``|| logic: "si alors sinon"  ||``. 
+Ajoute le bloc ``|| music: "jouer la mélodie"  ||`` dans le bloc ``|| input:lorsque le bouton A+B est pressé ||``. 
  
-Modifie les valeurs du bloc ``|| pins: Écrire sur la broche  ||``.
 
-Écrire sur la broche "P0" la valeur "1".
-
- 
 ```blocks 
 
-basic.forever(function () {
-    if (input.lightLevel() < 40) {
-        pins.digitalWritePin(DigitalPin.P0, 1)
-    } else {
-    	
-    }
+input.onButtonPressed(Button.AB, function () {
+    music.stopAllSounds()
 })
 
 ``` 
 
-## @showdialog 
+### @showdialog 
 
-Ajoute une condition "sinon".   
-
-## Étape 6 
- 
-Ajoute le bloc ``|| pins: écrire sur la broche  ||`` sous la condition ``|| logic: "si alors sinon"  ||``. 
- 
-Modifie les valeurs du bloc ``|| pins: Écrire sur la broche  ||``.
-
-Écrire sur la broche "P0" la valeur "0".
-
- 
-```blocks 
-
-basic.forever(function () {
-    if (input.lightLevel() < 40) {
-        pins.digitalWritePin(DigitalPin.P0, 1)
-    } else {
-        pins.digitalWritePin(DigitalPin.P0, 0)
-    }
-})
-
-``` 
-
-## @showdialog 
-
-Crée une variable.   
-
-## Étape 7 
- 
-Crée un bloc ``|| variables: Luminosité  ||``.
- 
- 
-## @showdialog 
-
-Définis la valeur de la variable par défaut.   
-
-## Étape 8
- 
-Ajoute le bloc ``|| input: niveau de luminosité  ||`` dans le bloc ``|| variables: définir "Luminosité" à "0"  ||``.
-
-```blocks 
-
-let Luminosité = 0
-basic.forever(function () {
-    Luminosité = input.lightLevel()
-    if (input.lightLevel() < 40) {
-        pins.digitalWritePin(DigitalPin.P0, 1)
-    } else {
-        pins.digitalWritePin(DigitalPin.P0, 0)
-    }
-})
-
-``` 
-
-# @showdialog 
-
-Fais afficher le niveau d'intensité lumineuse sur le micro:bit lorsque l'intensité est inférieure à "40".    
-
-## Étape 9
- 
-Ajoute le bloc ``|| variables: Luminosité  ||`` dans le bloc ``|| basic: afficher nombre  ||`` sous la condition "si".
-
-```blocks 
-
-let Luminosité = 0
-basic.forever(function () {
-    Luminosité = input.lightLevel()
-    if (input.lightLevel() < 40) {
-        basic.showNumber(Luminosité)
-        pins.digitalWritePin(DigitalPin.P0, 1)
-    } else {
-        pins.digitalWritePin(DigitalPin.P0, 0)
-    }
-})
-
-``` 
-
-# @showdialog 
-
-Fais afficher le niveau d'intensité lumineuse sur le micro:bit lorsque l'intensité est supérieure à "40".    
-
-## Étape 9
- 
-Ajoute le bloc ``|| variables: Luminosité  ||`` dans le bloc ``|| basic: afficher le texte  ||`` sous la condition "sinon".
-
-```blocks 
-
-let Luminosité = 0
-basic.forever(function () {
-    Luminosité = input.lightLevel()
-    if (input.lightLevel() < 40) {
-        basic.showNumber(Luminosité)
-        pins.digitalWritePin(DigitalPin.P0, 1)
-    } else {
-        basic.showNumber(Luminosité)
-        pins.digitalWritePin(DigitalPin.P0, 0)
-    }
-})
-
-``` 
-
-## @showdialog 
-
-Félicitations! Tu as terminé de programmer ta veilleuse numérique! 
+Félicitations! Tu as terminé de programmer ta radio numérique! 
 
 Ensuite, appuie sur le bouton "Télécharger" pour accéder à l'application MakeCode/Micro:bit.
 
+### @showdialog
