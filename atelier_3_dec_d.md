@@ -81,7 +81,7 @@ Insère le micro:bit dans le bouclier.
 
 Branche la lumière LED dans le port "P0" du bouclier.
 
-Attention à bien insèrer le fil dans le bon sens.
+Attention à bien insèrer le fil dans le bon sens. Branche jaune sur branche jaune.
 
 ![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_c_3.jpg?raw=true) 
 
