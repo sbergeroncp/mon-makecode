@@ -1,6 +1,6 @@
-# atelier_3_dec_f
+# atelier_3_dec_g
 
-# Transforme ton micro:bit en veilleuse.
+# Transforme ton micro:bit radio numérique.
 
 ## @showdialog 
 
@@ -12,18 +12,18 @@ Journée du numérique du 3 décembre 2021
 
 ## @showdialog 
 
-Transforme ton micro:bit en veilleuse.
+Transforme ton micro:bit en radio numérique.
  
-![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_f_1.jpg?raw=true) 
+![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_g_1.jpg?raw=true) 
 
 ## Étape 1 
 
-Supprime le bloc ``|| basic:au démarrage ||``. 
+Supprime les blocs ``|| basic:au démarrage ||`` et ``|| basic:toujours ||`` 
 
 
 ## @showdialog 
 
-Ajoute une commande lorsque le micro:bit est activé. 
+Ajoute une commande lorsque le bouton A est pressé. 
 
 ## Étape 2 
 

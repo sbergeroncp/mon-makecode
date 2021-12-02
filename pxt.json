@@ -17,7 +17,8 @@
         "atelier_3_dec_d.md",
         "atelier_3_dec_e.md",
         "atelier_3_dec_f.md",
-        "atelier_3_dec_c.md"
+        "atelier_3_dec_c.md",
+        "atelier_3_dec_g.md"
     ],
     "testFiles": [
         "test.ts"
