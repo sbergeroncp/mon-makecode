@@ -66,16 +66,19 @@ Ajoute une condition à la séquence de programmation.
 
 ## Étape 4 
  
-Ajoute le bloc ``|| input: température  ||`` dans le bloc ``|| logic:"0 < 0"||``. 
+Ajoute le bloc ``|| input: température  ||`` dans le bloc ``|| logic:"0 >= 0"||``. 
  
-Modifie la valeur de droite ``|| logic:"0 < 0"||`` à 40.
+Modifie la valeur de droite ``|| logic:"0 >= 0"||`` à 30.
 
-Autrement dit, "si l'intensité de lumière est inférieure à "40"... un événement doit de produire.
+Autrement dit, "si la température est supérieure ou égale à "30"... un événement doit de produire.
  
 ```blocks 
 
 basic.forever(function () {
-    if (input.lightLevel() < 40) {
+    basic.showNumber(input.temperature())
+    basic.pause(500)
+    basic.clearScreen()
+    if (input.temperature() >= 30) {
     	
     } else {
     	
@@ -90,18 +93,18 @@ Ajoute la condition "si".
 
 ## Étape 4 
  
-Ajoute le bloc ``|| pins: écrire sur la broche  ||`` sous la condition ``|| logic: "si alors sinon"  ||``. 
+Ajoute le bloc ``|| basic: afficher l'icône  ||`` sous la condition ``|| logic: "si alors sinon"  ||``. 
  
-Modifie les valeurs du bloc ``|| pins: Écrire sur la broche  ||``.
+Sélectionne l'icône du t-shirt.
 
-Écrire sur la broche "P0" la valeur "1".
-
- 
-```blocks 
+ ```blocks 
 
 basic.forever(function () {
-    if (input.lightLevel() < 40) {
-        pins.digitalWritePin(DigitalPin.P0, 1)
+    basic.showNumber(input.temperature())
+    basic.pause(500)
+    basic.clearScreen()
+    if (input.temperature() >= 30) {
+        basic.showIcon(IconNames.TShirt)
     } else {
     	
     }
@@ -115,20 +118,21 @@ Ajoute la condition "sinon".
 
 ## Étape 6 
  
-Ajoute le bloc ``|| pins: écrire sur la broche  ||`` sous la condition ``|| logic: "si alors sinon"  ||``. 
+Ajoute le bloc ``|| basic: afficher l'icône  ||`` sous la condition ``|| logic: "si alors sinon"  ||``. 
  
-Modifie les valeurs du bloc ``|| pins: Écrire sur la broche  ||``.
-
-Écrire sur la broche "P0" la valeur "0".
+Sélectionne l'icône du parapluie.
 
  
 ```blocks 
 
 basic.forever(function () {
-    if (input.lightLevel() < 40) {
-        pins.digitalWritePin(DigitalPin.P0, 1)
+    basic.showNumber(input.temperature())
+    basic.pause(500)
+    basic.clearScreen()
+    if (input.temperature() >= 30) {
+        basic.showIcon(IconNames.TShirt)
     } else {
-        pins.digitalWritePin(DigitalPin.P0, 0)
+        basic.showIcon(IconNames.Umbrella)
     }
 })
 
@@ -136,85 +140,10 @@ basic.forever(function () {
 
 ## @showdialog 
 
-Crée une variable.   
-
-## Étape 7 
- 
-Crée un bloc ``|| variables: Luminosité  ||``.
- 
- 
-## @showdialog 
-
-Définis la valeur de la variable par défaut.   
-
-## Étape 8
- 
-Ajoute le bloc ``|| input: niveau de luminosité  ||`` dans le bloc ``|| variables: définir "Luminosité" à "0"  ||``.
-
-```blocks 
-
-let Luminosité = 0
-basic.forever(function () {
-    Luminosité = input.lightLevel()
-    if (input.lightLevel() < 40) {
-        pins.digitalWritePin(DigitalPin.P0, 1)
-    } else {
-        pins.digitalWritePin(DigitalPin.P0, 0)
-    }
-})
-
-``` 
-
-# @showdialog 
-
-Fais afficher le niveau d'intensité lumineuse sur le micro:bit lorsque l'intensité est inférieure à "40".    
-
-## Étape 9
- 
-Ajoute le bloc ``|| variables: Luminosité  ||`` dans le bloc ``|| basic: afficher le texte  ||`` sous la condition "si".
-
-```blocks 
-
-let Luminosité = 0
-basic.forever(function () {
-    Luminosité = input.lightLevel()
-    if (input.lightLevel() < 40) {
-        basic.showString("" + (Luminosité))
-        pins.digitalWritePin(DigitalPin.P0, 1)
-    } else {
-        pins.digitalWritePin(DigitalPin.P0, 0)
-    }
-})
-
-``` 
-
-# @showdialog 
-
-Fais afficher le niveau d'intensité lumineuse sur le micro:bit lorsque l'intensité est supérieure à "40".    
-
-## Étape 9
- 
-Ajoute le bloc ``|| variables: Luminosité  ||`` dans le bloc ``|| basic: afficher le texte  ||`` sous la condition "sinon".
-
-```blocks 
-
-let Luminosité = 0
-basic.forever(function () {
-    Luminosité = input.lightLevel()
-    if (input.lightLevel() < 40) {
-        basic.showString("" + (Luminosité))
-        pins.digitalWritePin(DigitalPin.P0, 1)
-    } else {
-        basic.showString("" + (Luminosité))
-        pins.digitalWritePin(DigitalPin.P0, 0)
-    }
-})
-
-``` 
-
-## @showdialog 
-
-Félicitations! Tu as terminé de programmer ta veilleuse numérique! 
+Félicitations! Tu as terminé de programmer ton thermomètre numérique! 
 
 Ensuite, appuie sur le bouton "Télécharger" pour accéder à l'application MakeCode/Micro:bit.
 
+Prends le micro:bit dans tes mains. Qu'observes-tu?
+
+Teste ton programme!
