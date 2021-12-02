@@ -14,7 +14,7 @@ Journée du numérique du 3 décembre 2021
 
 Transforme ton micro:bit thermomètre.
  
-![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_c_7.jpg?raw=true) 
+![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_e_1.jpg?raw=true) 
 
 ## Étape 1 
 
