@@ -81,3 +81,23 @@ Félicitations! Tu as terminé de programmer ta radio numérique!
 Ensuite, appuie sur le bouton "Télécharger" pour accéder à l'application MakeCode/Micro:bit.
 
 ### @showdialog
+
+![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_g_2.jpg?raw=true) 
+
+Insère le micro:bit dans le bouclier.
+
+![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_g_3.jpg?raw=true)
+
+### @showdialog
+
+![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_g_4.jpg?raw=true)
+
+Insère la broche du buzzer dans le port "P0" du bouclier.
+
+![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_g_4.jpg?raw=true)
+
+## @showdialog 
+
+Félicitations! Tu as terminé de brancher ta radio numérique! 
+
+Teste maintenant ta programmation!
