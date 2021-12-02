@@ -92,7 +92,7 @@ Insère le micro:bit dans le bouclier.
 
 ![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_g_4.jpg?raw=true)
 
-Insère la broche du buzzer dans le port "P0" du bouclier.
+Branche le buzzer dans le port "P0" du bouclier.
 
 ![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_g_4.jpg?raw=true)
 
