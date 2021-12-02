@@ -18,7 +18,8 @@
         "atelier_3_dec_e.md",
         "atelier_3_dec_f.md",
         "atelier_3_dec_c.md",
-        "atelier_3_dec_g.md"
+        "atelier_3_dec_g.md",
+        "servo_led.md"
     ],
     "testFiles": [
         "test.ts"
