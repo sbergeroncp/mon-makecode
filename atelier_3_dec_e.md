@@ -1,6 +1,6 @@
 # atelier_3_dec_e
 
-# Transforme ton micro:bit en veilleuse. (Microbit et Shield)
+# Transforme ton micro:bit en thermomètre.
 
 ## @showdialog 
 
@@ -12,7 +12,7 @@ Journée du numérique du 3 décembre 2021
 
 ## @showdialog 
 
-Transforme ton micro:bit en veilleuse.
+Transforme ton micro:bit thermomètre.
  
 ![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_c_7.jpg?raw=true) 
 
@@ -27,17 +27,35 @@ Ajoute une commande lorsque le micro:bit est activé.
 
 ## Étape 2 
 
- Ajoute le bloc ``|| logic: "si alors sinon"  ||`` dans le bloc ``|| basic:toujours ||``. 
- 
+ Ajoute le bloc ``|| input:température  ||`` dans le bloc ``|| basic:montrer un nombre ||``.
+
+ Ajoute cette nouvelle séquence dans le bloc ``|| basic:toujours ||``.
+
 
 ```blocks 
 
 basic.forever(function () {
-    if (true) {
-    	
-    } else {
-    	
-    }
+    basic.showNumber(input.temperature())
+    
+})
+
+``` 
+
+## @showdialog 
+
+Ajoute une autre commande lorsque le micro:bit est activé. 
+
+## Étape 3 
+
+ Ajoute le bloc ``|| basic:pause ms (500)  ||`` et le bloc ``|| basic:effacer l'écran ||`` dans le bloc ``|| basic:toujours ||``.
+
+ 
+```blocks 
+
+basic.forever(function () {
+    basic.showNumber(input.temperature())
+    basic.pause(500)
+    basic.clearScreen()
 })
 
 ``` 
@@ -46,9 +64,9 @@ basic.forever(function () {
 
 Ajoute une condition à la séquence de programmation.   
 
-## Étape 3 
+## Étape 4 
  
-Ajoute le bloc ``|| input: niveau d'intensité lumineuse  ||`` dans le bloc ``|| logic:"0 < 0"||``. 
+Ajoute le bloc ``|| input: température  ||`` dans le bloc ``|| logic:"0 < 0"||``. 
  
 Modifie la valeur de droite ``|| logic:"0 < 0"||`` à 40.
 

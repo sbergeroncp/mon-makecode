@@ -14,7 +14,7 @@ Journée du numérique du 3 décembre 2021
 
 Transforme ton micro:bit en veilleuse.
  
-![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_c_7.jpg?raw=true) 
+![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_f_1.jpg?raw=true) 
 
 ## Étape 1 
 
@@ -153,7 +153,7 @@ Fais afficher le niveau d'intensité lumineuse sur le micro:bit lorsque l'intens
 
 ## Étape 9
  
-Ajoute le bloc ``|| variables: Luminosité  ||`` dans le bloc ``|| basic: afficher le texte  ||`` sous la condition "si".
+Ajoute le bloc ``|| variables: Luminosité  ||`` dans le bloc ``|| basic: afficher nombre  ||`` sous la condition "si".
 
 ```blocks 
 
@@ -161,7 +161,7 @@ let Luminosité = 0
 basic.forever(function () {
     Luminosité = input.lightLevel()
     if (input.lightLevel() < 40) {
-        basic.showString("" + (Luminosité))
+        basic.showNumber(Luminosité)
         pins.digitalWritePin(DigitalPin.P0, 1)
     } else {
         pins.digitalWritePin(DigitalPin.P0, 0)
@@ -184,10 +184,10 @@ let Luminosité = 0
 basic.forever(function () {
     Luminosité = input.lightLevel()
     if (input.lightLevel() < 40) {
-        basic.showString("" + (Luminosité))
+        basic.showNumber(Luminosité)
         pins.digitalWritePin(DigitalPin.P0, 1)
     } else {
-        basic.showString("" + (Luminosité))
+        basic.showNumber(Luminosité)
         pins.digitalWritePin(DigitalPin.P0, 0)
     }
 })
