@@ -47,7 +47,7 @@ input.onButtonPressed(Button.A, function () {
 
 ## Étape 5
 
-Remplace le mot ``|| basic: Hello ||`` du bloc ``|| basic: afficher texte ||`` par le bloc ``||arrays: obtenir une valeur aléatoire||``.
+Remplace le mot ``|| basic: Hello ||`` du bloc ``|| basic: afficher texte ||`` par le bloc ``||arrays: obtenir une valeur aléatoire depuis||`` ``||variables: Mois||``.
 
 
 ```blocks
@@ -101,7 +101,7 @@ input.onButtonPressed(Button.B, function () {
 
 ## Étape 9
 
-Remplace le mot ``|| basic: Hello ||`` du bloc ``|| basic: afficher texte ||`` par le bloc ``||arrays: obtenir une valeur aléatoire||``.
+Remplace le mot ``|| basic: Hello ||`` du bloc ``|| basic: afficher texte ||`` par le bloc ``||arrays: obtenir une valeur aléatoire depuis||`` ``||variables: Qualités||``.
 
 
 ```blocks
