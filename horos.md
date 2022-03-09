@@ -22,7 +22,7 @@ let Mois = ["a", "b", "c"]
 
 ## Étape 3
 
-Remplace les cases du bloc ``||arrays: liste de textes à tableau a b c||`` par le nom des douze mois.
+Remplace les cases du bloc ``||arrays: tableau de a b c||`` par le nom des douze mois.
 
 ```blocks
 
@@ -74,7 +74,7 @@ let Qualités = ["a", "b", "c"]
 
 ## Étape 7
 
-Remplace las cases du bloc ``||arrays: liste de textes à tableau a b c||`` par le nom des douze qualités.
+Remplace las cases du bloc ``||arrays: tableau de a b c||`` par le nom des douze qualités.
 
 Regarde l'indice.
 
