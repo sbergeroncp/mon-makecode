@@ -12,7 +12,7 @@ Supprime le bloc ``||basic:toujours||``.
 
 Crée une ``||variables: variable||`` et donne lui le nom ``||variables:Mois||``. 
 
-Ajoute le bloc ``||variables: définir Mois à||`` ``||arrays: liste de textes à tableau a b c||`` dans le bloc ``||basic: au démarrage||``.
+Ajoute le bloc ``||variables: définir Mois à||`` ``||arrays: tableau de a b c||`` dans le bloc ``||basic: au démarrage||``.
 
 ```blocks
 
@@ -64,7 +64,7 @@ Mois = ["Janvier", "Février", "Mars"]
 
 Crée une ``||variables: variable||`` et donne lui le nom ``||variables:Qualités||``. 
 
-Ajoute le bloc ``||variables: définir Qualités à||`` ``||arrays: liste de textes à tableau a b c||`` dans le bloc ``||basic: au démarrage||``.
+Ajoute le bloc ``||variables: définir Qualités à||`` ``||arrays: de tableau a b c||`` dans le bloc ``||basic: au démarrage||``.
 
 ```blocks
 
